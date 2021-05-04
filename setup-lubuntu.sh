@@ -4,11 +4,11 @@
 # | |       | |   | |    Rolando Ramos Torres (@rolodoom)
 # | |       | |___| |    http://rolandoramostorres.com
 # |_|       |_______|
-#  _         _______   
-# | |       |  ___  |    After install script
-# | |       | |   | |    for my wife's PC
-# | |_____  | |___| |    Tested on Lubuntu 20.04 LTS
-# |_______| |_______|    Based on kubuntu-setup (https://github.com/rolodoom/kubuntu-setup)
+#  _         _______
+# | |       |  ___  |
+# | |       | |   | |    After install script
+# | |_____  | |___| |    for my Home Studio Box
+# |_______| |_______|    Tested on Lubuntu 20.04 LTS
 #
 
 # INITIAL UPGRADE

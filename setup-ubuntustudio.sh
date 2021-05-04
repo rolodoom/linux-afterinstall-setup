@@ -4,11 +4,11 @@
 # | |       | |   | |    Rolando Ramos Torres (@rolodoom)
 # | |       | |___| |    http://rolandoramostorres.com
 # |_|       |_______|
-#  _        		 ubuntustudio-setup v1.0
+#  _         _______
 # | |       |  ___  |
 # | |       | |   | |    After install script
 # | |_____  | |___| |    for my Home Studio Box
-# |_______| |_______|    Tested on Ubuntu Studio 21.04 LTS
+# |_______| |_______|    Tested on UbuntuStudio 21.04
 #
 
 # INITIAL UPGRADE

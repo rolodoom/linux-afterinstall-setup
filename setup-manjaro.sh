@@ -4,10 +4,10 @@
 # | |       | |   | |    Rolando Ramos Torres (@rolodoom)
 # | |       | |___| |    http://rolandoramostorres.com
 # |_|       |_______|
-#  _
+#  _         _______
 # | |       |  ___  |
 # | |       | |   | |    After install script
-# | |_____  | |___| |    for my Home Studio Box running
+# | |_____  | |___| |    for my Home Studio Box
 # |_______| |_______|    Tested on Manjaro
 #
 
