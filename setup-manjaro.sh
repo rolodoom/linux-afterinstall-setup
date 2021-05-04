@@ -1,4 +1,17 @@
 #!/bin/bash
+#  _______   _______
+# |  _____| |  ___  |
+# | |       | |   | |    Rolando Ramos Torres (@rolodoom)
+# | |       | |___| |    http://rolandoramostorres.com
+# |_|       |_______|
+#  _
+# | |       |  ___  |
+# | |       | |   | |    After install script
+# | |_____  | |___| |    for my Home Studio Box running
+# |_______| |_______|    Tested on Manjaro
+#
+
+
 # BACKUPS - Install and don't forget to backup
 sudo pacman -S timeshift
 
