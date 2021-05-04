@@ -52,4 +52,3 @@ sudo pacman -S gimp inkscape libreoffice-fresh keepassxc aspell-es ulauncher cod
 yay -S dropbox
 yay -S dropbox-plasma-dark-icons-git
 yay -S code-marketplace
-yay -S color-picker-git
