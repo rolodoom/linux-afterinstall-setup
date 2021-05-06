@@ -8,7 +8,7 @@ Download, set permissions and run the script easily:
 wget https://raw.githubusercontent.com/rolodoom/linux-afterinstall-setup/main/setup-kubuntu.sh && sudo chmod +x setup-kubuntu.sh && ./setup-kubuntu.sh
 
 ## Lubuntu
-wget https://raw.githubusercontent.com/rolodoom/linux-afterinstall-setup/mmainaster/setup-lubuntu.sh && sudo chmod +x setup-lubuntu.sh && ./setup-lubuntu.sh
+wget https://raw.githubusercontent.com/rolodoom/linux-afterinstall-setup/main/setup-lubuntu.sh && sudo chmod +x setup-lubuntu.sh && ./setup-lubuntu.sh
 
 ## UbuntuStudio
 wget https://raw.githubusercontent.com/rolodoom/linux-afterinstall-setup/main/setup-ubuntustudio.sh && sudo chmod +x setup-ubuntustudio.sh && ./setup-ubuntustudio.sh
