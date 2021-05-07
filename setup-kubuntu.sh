@@ -91,8 +91,8 @@ sudo adduser $USER vboxusers
 # Permissions on public_html folder on $HOME directory, where I usually
 sudo chown -R www-data:www-data /var/www/
 sudo chmod -R g+rwX /var/www/
-sudo chown -R www-data:www-data $HOME/public_html/
-sudo chmod -R g+rwX $HOME/public_html/
+sudo chown -R www-data:www-data /home/public_html/
+sudo chmod -R g+rwX /home/public_html/
 
 # FINAL STEPS
 # Install TLP for laptops
