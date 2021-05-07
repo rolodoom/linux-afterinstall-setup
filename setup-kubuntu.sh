@@ -56,7 +56,7 @@ sudo systemctl restart apache2
 #---wine
 sudo apt install --install-recommends winehq-staging
 #---standar repo install
-sudo apt install -y flatpak htop dolphin-plugins winetricks winbind neofetch filezilla poedit pdfarranger libreoffice libreoffice-style-breeze inkscape scribus typecatcher posterazor git ardour audacity soundkonverter keepassxc gufw kid3 k3b ktorrent kdenlive handbrake simplescreenrecorder nodejs spotify-client linux-lowlatency studio-controls ubuntustudio-audio-plugins ubuntustudio-lowlatency-settings ubuntustudio-performance-tweaks carla carla-bridge-win32 carla-bridge-win64 carla-bridge-wine32 carla-bridge-wine64 carla-data carla-lv2 carla-vst zam-plugins dragonfly-reverb virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack
+sudo apt install -y flatpak htop dolphin-plugins winetricks winbind neofetch filezilla poedit pdfarranger libreoffice libreoffice-style-breeze inkscape scribus typecatcher posterazor git ardour audacity soundkonverter keepassxc gufw kid3 k3b ktorrent kdenlive handbrake simplescreenrecorder nodejs linux-lowlatency studio-controls ubuntustudio-audio-plugins ubuntustudio-lowlatency-settings ubuntustudio-performance-tweaks carla carla-bridge-win32 carla-bridge-win64 carla-bridge-wine32 carla-bridge-wine64 carla-data carla-lv2 carla-vst zam-plugins dragonfly-reverb virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack
 
 # INSTALL NON-FREE DPKG SOFTWARE
 #getting debs
@@ -76,8 +76,7 @@ sudo apt install ./teamviewer_amd64.deb
 
 # FLATPAKS from flathub
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-sudo apt install materia-kde materia-gtk-theme
-flatpak install flathub org.gtk.Gtk3theme.Materia-dark org.gimp.GIMP org.kde.kdenlive org.inkscape.Inkscape com.skype.Client us.zoom.Zoom com.polyphone_soundfonts.polyphone com.spotify.Client ar.com.tuxguitar.TuxGuitar com.vscodium.codium
+flatpak install flathub org.gtk.Gtk3theme.Breeze-Dark org.gimp.GIMP us.zoom.Zoom com.polyphone_soundfonts.polyphone com.spotify.Client ar.com.tuxguitar.TuxGuitar
 sudo apt install plasma-discover-backend-flatpak plasma-discover-flatpak-backend
 
 # SPANISH LANGUAGE
