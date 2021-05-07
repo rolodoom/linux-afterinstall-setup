@@ -76,7 +76,7 @@ sudo apt install ./teamviewer_amd64.deb
 
 # FLATPAKS from flathub
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub org.gtk.Gtk3theme.Breeze-Dark org.gimp.GIMP us.zoom.Zoom com.polyphone_soundfonts.polyphone com.spotify.Client ar.com.tuxguitar.TuxGuitar
+flatpak install flathub org.gtk.Gtk3theme.Breeze org.gtk.Gtk3theme.Breeze-Dark org.gimp.GIMP org.kde.kdenlive com.skype.Client us.zoom.Zoom com.polyphone_soundfonts.polyphone com.spotify.Client ar.com.tuxguitar.TuxGuitar
 sudo apt install plasma-discover-backend-flatpak plasma-discover-flatpak-backend
 
 # SPANISH LANGUAGE
