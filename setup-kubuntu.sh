@@ -99,7 +99,7 @@ sudo chmod -R g+rwX $HOME/public_html/
 #sudo apt install -y tlp tlp-rdw
 #sudo tlp start
 # Remove unused software
-sudo apt purge kubuntu-wallpapers kubuntu-wallpapers-focal plasma-workspace-wallpapers -yy && sudo apt autoremove -y
+sudo apt autoremove -y
 # Disable Apache and Mysql services at boot
 sudo systemctl disable apache2
 sudo systemctl disable mysql.service
