@@ -56,7 +56,7 @@ sudo systemctl restart apache2
 #---wine
 sudo apt install --install-recommends winehq-staging
 #---standar repo install
-sudo apt install -y flatpak htop dolphin-plugins winetricks neofetch filezilla poedit pdfarranger libreoffice libreoffice-style-breeze inkscape scribus typecatcher posterazor git ardour audacity soundconverter keepassxc gufw kid3 k3b ktorrent kdenlive handbrake simplescreenrecorder nodejs linux-lowlatency studio-controls ubuntustudio-audio-plugins ubuntustudio-lowlatency-settings ubuntustudio-performance-tweaks carla carla-lv2 carla-vst zam-plugins dragonfly-reverb virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack
+sudo apt install -y htop dolphin-plugins winetricks neofetch filezilla poedit pdfarranger libreoffice libreoffice-style-breeze inkscape scribus typecatcher posterazor git ardour audacity soundconverter keepassxc gufw kid3 k3b ktorrent handbrake simplescreenrecorder nodejs linux-lowlatency studio-controls ubuntustudio-audio-plugins ubuntustudio-lowlatency-settings ubuntustudio-performance-tweaks carla carla-lv2 carla-vst zam-plugins dragonfly-reverb virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack
 
 # INSTALL NON-FREE DPKG SOFTWARE
 #getting debs
@@ -74,11 +74,6 @@ sudo apt install ./appimagelauncher_amd64.deb
 sudo apt install ./LinVst_amd64.deb
 sudo apt install ./teamviewer_amd64.deb
 
-# FLATPAKS from flathub
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub org.gtk.Gtk3theme.Breeze org.gtk.Gtk3theme.Breeze-Dark org.gimp.GIMP org.kde.kdenlive com.skype.Client us.zoom.Zoom com.polyphone_soundfonts.polyphone com.spotify.Client ar.com.tuxguitar.TuxGuitar
-sudo apt install plasma-discover-backend-flatpak plasma-discover-flatpak-backend
-
 # SPANISH LANGUAGE
 sudo apt install -y language-pack-gnome-es language-pack-kde-es aspell-es $(check-language-support)
 
@@ -91,8 +86,8 @@ sudo adduser $USER vboxusers
 # Permissions on public_html folder on $HOME directory, where I usually
 sudo chown -R www-data:www-data /var/www/
 sudo chmod -R g+rwX /var/www/
-sudo chown -R www-data:www-data /home/public_html/
-sudo chmod -R g+rwX /home/public_html/
+sudo chown -R www-data:www-data ~/public_html/
+sudo chmod -R g+rwX ~/public_html/
 
 # FINAL STEPS
 # Install TLP for laptops
