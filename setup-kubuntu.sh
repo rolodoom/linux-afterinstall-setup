@@ -44,7 +44,7 @@ sudo a2enmod rewrite
 # restart apache
 sudo systemctl restart apache2
 # phpmyadmin
-sudo apt install phpmyadmin
+sudo apt install -y phpmyadmin
 # Uncomment to secure mysql installation. Mut be done after installing phpmyadmin or there will be problems
 # sudo mysql_secure_installation
 # Generate PDF thumbnails uncomment PDF Policy here:
