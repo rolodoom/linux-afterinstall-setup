@@ -31,6 +31,8 @@ sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal mai
 rm -rf winehq.key
 #---inkscape
 sudo add-apt-repository ppa:inkscape.dev/stable
+#---libreoffice
+sudo add-apt-repository ppa:libreoffice/ppa
 # upgrade after repos
 sudo apt update && sudo apt upgrade -y
 sudo apt full-upgrade
