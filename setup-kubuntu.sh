@@ -33,6 +33,8 @@ rm -rf winehq.key
 sudo add-apt-repository ppa:inkscape.dev/stable
 #---libreoffice
 sudo add-apt-repository ppa:libreoffice/ppa
+#---kdenlive
+sudo add-apt-repository ppa:kdenlive/kdenlive-stable
 # upgrade after repos
 sudo apt update && sudo apt upgrade -y
 sudo apt full-upgrade
