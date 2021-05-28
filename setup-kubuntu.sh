@@ -60,7 +60,7 @@ sudo systemctl restart apache2
 #---wine
 sudo apt install --install-recommends winehq-staging
 #---standar repo install
-sudo apt install -y htop dolphin-plugins winetricks neofetch filezilla poedit pdfarranger libreoffice libreoffice-style-breeze inkscape scribus typecatcher posterazor git ardour audacity soundconverter keepassxc gufw kid3 k3b ktorrent handbrake simplescreenrecorder nodejs linux-lowlatency studio-controls ubuntustudio-audio-plugins ubuntustudio-lowlatency-settings ubuntustudio-performance-tweaks carla carla-lv2 carla-vst zam-plugins dragonfly-reverb virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack
+sudo apt install -y htop dolphin-plugins winetricks neofetch filezilla poedit pdfarranger libreoffice libreoffice-style-breeze gimp inkscape scribus typecatcher posterazor git ardour audacity soundconverter keepassxc gufw kid3 k3b ktorrent kdenlive handbrake simplescreenrecorder nodejs linux-lowlatency studio-controls ubuntustudio-audio-plugins ubuntustudio-lowlatency-settings ubuntustudio-performance-tweaks carla carla-lv2 carla-vst zam-plugins dragonfly-reverb virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack
 
 # INSTALL NON-FREE DPKG SOFTWARE
 #getting debs
