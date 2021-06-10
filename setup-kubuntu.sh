@@ -70,6 +70,7 @@ wget -O ulauncher_all.deb https://github.com/Ulauncher/Ulauncher/releases/downlo
 wget -O appimagelauncher_amd64.deb https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher_2.2.0-travis995.0f91801.bionic_amd64.deb
 wget -O LinVst_amd64.deb https://github.com/osxmidi/LinVst/releases/download/4.1/LinVst-64bit-32bit_4.1.0.deb
 wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+wget -O code_amd64.deb 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64'
 #installing...
 sudo apt install ./google-chrome-stable_current_amd64.deb
 sudo apt install ./dropbox_amd64.deb
@@ -77,6 +78,7 @@ sudo apt install ./ulauncher_all.deb
 sudo apt install ./appimagelauncher_amd64.deb
 sudo apt install ./LinVst_amd64.deb
 sudo apt install ./teamviewer_amd64.deb
+sudo apt install ./code_amd64.deb
 
 # SPANISH LANGUAGE
 sudo apt install -y language-pack-gnome-es language-pack-kde-es aspell-es $(check-language-support)
