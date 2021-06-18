@@ -20,7 +20,7 @@ sudo dpkg --add-architecture i386
 # ADDITIONAL REPOSITORIES
 sudo apt install -y curl
 # getting repos
-curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 #---ubuntustudio backports
 sudo add-apt-repository ppa:ubuntustudio-ppa/backports
 sudo add-apt-repository ppa:ubuntustudio-ppa/ardour-backports
@@ -83,6 +83,14 @@ sudo apt install ./code_amd64.deb
 # SPANISH LANGUAGE
 sudo apt install -y language-pack-gnome-es language-pack-kde-es aspell-es $(check-language-support)
 
+# MY SHELL SCRIPTS
+git clone https://github.com/rolodoom/shell-scripts.git
+chmod +x shell-scripts/install.sh
+./shell-scripts/install.sh
+
+# ENABLE FIREWALL
+sudo ufw enable
+
 # PERMISSIONS
 # Add me to any groups I might need to be a part of:
 sudo adduser $USER www-data
@@ -96,9 +104,6 @@ sudo chown -R www-data:www-data ~/public_html/
 sudo chmod -R g+rwX ~/public_html/
 
 # FINAL STEPS
-# Install TLP for laptops
-#sudo apt install -y tlp tlp-rdw
-#sudo tlp start
 # Remove unused software
 sudo apt autoremove -y
 # Disable Apache and Mysql services at boot
