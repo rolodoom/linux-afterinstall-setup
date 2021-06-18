@@ -1,25 +1,50 @@
 # linux-afterinstall-setup
 Linux after install scripts that I use for different distros.
 
-# Usage
+## Usage
 Download, set permissions and run the script easily:
 
-## Desktop
+### Desktop
 
-### Kubuntu
-wget https://raw.githubusercontent.com/rolodoom/linux-afterinstall-setup/main/setup-kubuntu.sh && sudo chmod +x setup-kubuntu.sh && ./setup-kubuntu.sh
+#### Kubuntu
 
-### Lubuntu
-wget https://raw.githubusercontent.com/rolodoom/linux-afterinstall-setup/main/setup-lubuntu.sh && sudo chmod +x setup-lubuntu.sh && ./setup-lubuntu.sh
+```bash
+wget https:/raw.githubusercontent.com/rolodoom/linux-afterinstall-setup/main/setup-kubuntu.sh
+sudo chmod +x setup-kubuntu.sh
+./setup-kubuntu.sh
+```
 
-### UbuntuStudio
-wget https://raw.githubusercontent.com/rolodoom/linux-afterinstall-setup/main/setup-ubuntustudio.sh && sudo chmod +x setup-ubuntustudio.sh && ./setup-ubuntustudio.sh
+#### Lubuntu
 
-### Manjaro
-wget https://raw.githubusercontent.com/rolodoom/linux-afterinstall-setup/main/setup-manjaro.sh && sudo chmod +x setup-manjaro.sh && ./setup-manjaro.sh
+```bash
+wget https://raw.githubusercontent.com/rolodoom/linux-afterinstall-setup/main/setup-lubuntu.sh
+sudo chmod +x setup-lubuntu.sh
+./setup-lubuntu.sh
+```
 
-## Laptop
+#### UbuntuStudio
+
+```bash
+wget https://raw.githubusercontent.com/rolodoom/linux-afterinstall-setup/main/setup-ubuntustudio.sh
+sudo chmod +x setup-ubuntustudio.sh
+./setup-ubuntustudio.sh
+```
+
+#### Manjaro
+
+```bash
+wget https://raw.githubusercontent.com/rolodoom/linux-afterinstall-setup/main/setup-manjaro.sh
+sudo chmod +x setup-manjaro.sh
+./setup-manjaro.sh
+```
+
+### Laptop
 There are a little changes that I use on my laptop:
 
-### Kubuntu Laptop
-wget https://raw.githubusercontent.com/rolodoom/linux-afterinstall-setup/main/setup-kubuntu-laptop.sh && sudo chmod +x setup-kubuntu-laptop.sh && ./setup-kubuntu-laptop.sh
+#### Kubuntu Laptop
+
+```bash
+wget https://raw.githubusercontent.com/rolodoom/linux-afterinstall-setup/main/setup-kubuntu-laptop.sh
+sudo chmod +x setup-kubuntu-laptop.sh
+./setup-kubuntu-laptop.sh
+```
