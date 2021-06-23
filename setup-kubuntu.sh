@@ -100,6 +100,10 @@ sudo chmod -R g+rwX /var/www/
 sudo chown -R www-data:www-data ~/public_html/
 sudo chmod -R g+rwX ~/public_html/
 
+# INSTALL FROM FLATPAK
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub org.musescore.MuseScore io.github.wereturtle.ghostwriter
+
 # FINAL STEPS
 # Remove unused software
 sudo apt autoremove -y
