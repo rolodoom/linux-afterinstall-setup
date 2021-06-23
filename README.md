@@ -9,7 +9,7 @@ Download, set permissions and run the script easily:
 #### Kubuntu
 
 ```bash
-wget https:/raw.githubusercontent.com/rolodoom/linux-afterinstall-setup/main/setup-kubuntu.sh
+wget https://raw.githubusercontent.com/rolodoom/linux-afterinstall-setup/main/setup-kubuntu.sh
 sudo chmod +x setup-kubuntu.sh
 ./setup-kubuntu.sh
 ```
