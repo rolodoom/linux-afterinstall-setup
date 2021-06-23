@@ -11,6 +11,9 @@
 # |_______| |_______|    Tested on Kubuntu 20.04 LTS
 #
 
+# REMOVE SNAP
+sudo apt purge snapd -y
+
 # INITIAL UPGRADE
 sudo apt update && sudo apt upgrade -y
 
@@ -36,8 +39,7 @@ sudo add-apt-repository ppa:libreoffice/ppa
 #---kdenlive
 sudo add-apt-repository ppa:kdenlive/kdenlive-stable
 # upgrade after repos
-sudo apt update && sudo apt upgrade -y
-sudo apt full-upgrade
+sudo apt update && sudo apt full-upgrade -y
 
 # LAMP SERVER
 # tasksel
@@ -57,10 +59,10 @@ sudo apt install php-imagick
 sudo systemctl restart apache2
 
 # INSTALL SOFTWARE FROM REPOSITORY
+#---standar repo install
+sudo apt install -y flatpak htop dolphin-plugins winetricks neofetch filezilla poedit pdfarranger libreoffice libreoffice-style-breeze gimp inkscape scribus typecatcher posterazor git ardour audacity soundconverter keepassxc gufw kid3 k3b ktorrent kdenlive handbrake simplescreenrecorder nodejs linux-lowlatency studio-controls ubuntustudio-audio-plugins ubuntustudio-lowlatency-settings ubuntustudio-performance-tweaks carla carla-lv2 carla-vst zam-plugins dragonfly-reverb virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack
 #---wine
 sudo apt install --install-recommends winehq-staging
-#---standar repo install
-sudo apt install -y htop dolphin-plugins winetricks neofetch filezilla poedit pdfarranger libreoffice libreoffice-style-breeze gimp inkscape scribus typecatcher posterazor git ardour audacity soundconverter keepassxc gufw kid3 k3b ktorrent kdenlive handbrake simplescreenrecorder nodejs linux-lowlatency studio-controls ubuntustudio-audio-plugins ubuntustudio-lowlatency-settings ubuntustudio-performance-tweaks carla carla-lv2 carla-vst zam-plugins dragonfly-reverb virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack
 
 # INSTALL NON-FREE DPKG SOFTWARE
 #getting debs
@@ -71,14 +73,9 @@ wget -O appimagelauncher_amd64.deb https://github.com/TheAssassin/AppImageLaunch
 wget -O LinVst_amd64.deb https://github.com/osxmidi/LinVst/releases/download/4.1/LinVst-64bit-32bit_4.1.0.deb
 wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
 wget -O code_amd64.deb 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64'
+wget -O edge_beta_amd64.deb 'https://go.microsoft.com/fwlink/?linkid=2149139'
 #installing...
-sudo apt install ./google-chrome-stable_current_amd64.deb
-sudo apt install ./dropbox_amd64.deb
-sudo apt install ./ulauncher_all.deb
-sudo apt install ./appimagelauncher_amd64.deb
-sudo apt install ./LinVst_amd64.deb
-sudo apt install ./teamviewer_amd64.deb
-sudo apt install ./code_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb ./dropbox_amd64.deb ./ulauncher_all.deb ./appimagelauncher_amd64.deb ./LinVst_amd64.deb ./teamviewer_amd64.deb ./code_amd64.deb ./edge_beta_amd64.deb
 
 # SPANISH LANGUAGE
 sudo apt install -y language-pack-gnome-es language-pack-kde-es aspell-es $(check-language-support)
@@ -105,11 +102,6 @@ sudo chmod -R g+rwX ~/public_html/
 
 # FINAL STEPS
 # Remove unused software
-sudo apt autoremove -y
-# Disable Apache and Mysql services at boot
-sudo systemctl disable apache2
-sudo systemctl disable mysql.service
-# APT Autoremove
 sudo apt autoremove -y
 # Final APT update
 sudo apt update && sudo apt upgrade -y
