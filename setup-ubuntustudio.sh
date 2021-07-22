@@ -54,8 +54,6 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 wget --content-disposition https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2020.03.04_amd64.deb
 # visual studio code
 wget --content-disposition https://go.microsoft.com/fwlink/?LinkID=760868
-# microsoft edge developer
-wget --content-disposition https://go.microsoft.com/fwlink/?linkid=2124602
 wget deb https://github.com/Ulauncher/Ulauncher/releases/download/5.10.0/ulauncher_5.10.0_all.deb
 wget https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher_2.2.0-travis995.0f91801.bionic_amd64.deb
 wget https://github.com/osxmidi/LinVst/releases/download/4.1/LinVst-64bit-32bit_4.1.0.deb
