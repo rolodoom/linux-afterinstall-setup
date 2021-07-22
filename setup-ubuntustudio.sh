@@ -46,7 +46,7 @@ sudo systemctl restart apache2
 #---wine-hq
 sudo apt install --install-recommends winehq-staging
 #--from ubuntu repo
-sudo apt install -y latte-dock git neofetch htop flatpak dolphin-plugins winetricks winbind neofetch filezilla poedit scribus typecatcher posterazor keepassxc gufw handbrake simplescreenrecorder polyphone nodejs npm virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack
+sudo apt install -y latte-dock git neofetch htop flatpak dolphin-plugins winetricks winbind neofetch filezilla poedit libreoffice-style-breeze typecatcher posterazor keepassxc gufw handbrake simplescreenrecorder polyphone npm virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack
 
 # INSTALL NON-FREE DPKG SOFTWARE
 #getting debs
