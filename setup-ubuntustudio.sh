@@ -23,7 +23,10 @@ wget -nc https://dl.winehq.org/wine-builds/winehq.key
 sudo apt-key add winehq.key
 sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ hirsute main'
 rm -rf winehq.key
-sudo apt update && sudo apt upgrade -y
+#---libreoffice
+sudo add-apt-repository ppa:libreoffice/ppa
+#update && upgrade
+sudo apt update && sudo apt full-upgrade -y
 
 # LAMP SERVER
 # tasksel
