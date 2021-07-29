@@ -23,8 +23,12 @@ wget -nc https://dl.winehq.org/wine-builds/winehq.key
 sudo apt-key add winehq.key
 sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ hirsute main'
 rm -rf winehq.key
+#---inkscape
+sudo add-apt-repository ppa:inkscape.dev/stable
 #---libreoffice
 sudo add-apt-repository ppa:libreoffice/ppa
+#---kdenlive
+sudo add-apt-repository ppa:kdenlive/kdenlive-stable
 #update && upgrade
 sudo apt update && sudo apt full-upgrade -y
 
