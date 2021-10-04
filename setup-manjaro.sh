@@ -40,7 +40,7 @@ sudo usermod -aG audio $USER
 sudo pacman -S audacity soundconverter kdenlive musescore vlc dragonfly-reverb lsp-plugins calf caps carla dpf-plugins tap-plugins zam-plugins eq10q surge ebumeter x42-plugins
 
 # Add Other Software
-sudo pacman -S gimp inkscape libreoffice-fresh keepassxc aspell-es ulauncher code gufw libmythes mythes-es papirus-icon-theme papirus-maia-icon-theme neofetch
+sudo pacman -S gimp inkscape libreoffice-fresh keepassxc aspell-es code gufw libmythes mythes-es papirus-icon-theme papirus-maia-icon-theme neofetch
 
 #AUR
 yay -S dropbox
