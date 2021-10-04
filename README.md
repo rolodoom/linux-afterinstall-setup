@@ -6,6 +6,14 @@ Download, set permissions and run the script easily:
 
 ### Desktop
 
+#### Manjaro
+
+```bash
+wget https://raw.githubusercontent.com/rolodoom/linux-afterinstall-setup/main/setup-manjaro.sh
+sudo chmod +x setup-manjaro.sh
+./setup-manjaro.sh
+```
+
 #### Kubuntu
 
 ```bash
@@ -28,14 +36,6 @@ sudo chmod +x setup-lubuntu.sh
 wget https://raw.githubusercontent.com/rolodoom/linux-afterinstall-setup/main/setup-ubuntustudio.sh
 sudo chmod +x setup-ubuntustudio.sh
 ./setup-ubuntustudio.sh
-```
-
-#### Manjaro
-
-```bash
-wget https://raw.githubusercontent.com/rolodoom/linux-afterinstall-setup/main/setup-manjaro.sh
-sudo chmod +x setup-manjaro.sh
-./setup-manjaro.sh
 ```
 
 ### Laptop
