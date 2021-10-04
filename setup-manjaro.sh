@@ -8,12 +8,9 @@
 # | |       |  ___  |
 # | |       | |   | |    After install script
 # | |_____  | |___| |    for my Home Studio Box
-# |_______| |_______|    Tested on Manjaro
+# |_______| |_______|    Tested on Manjaro 21.1.4 Pahvo
 #
 
-
-# BACKUPS - Install and don't forget to backup
-sudo pacman -S timeshift
 
 # TLP - uncomment to enable
 #sudo systemctl enable tlp --now
@@ -22,9 +19,6 @@ sudo pacman -S timeshift
 
 # Full distro Upgrade
 sudo pacman -Syu
-
-# Add System software
-sudo pacman -S bash-completion yay
 
 # Configure Audio Workstation
 sudo pacman -S jack2 a2jmidid
@@ -43,10 +37,10 @@ sudo usermod -aG audio $USER
 #@audio           -       memlock         unlimited
 
 # Add Audio / Video Workstation Software
-sudo pacman -S ardour audacity soundconverter kdenlive musescore vlc dragonfly-reverb lsp-plugins calf caps carla dpf-plugins tap-plugins zam-plugins eq10q  surge ebumeter x42-plugins
+sudo pacman -S audacity soundconverter kdenlive musescore vlc dragonfly-reverb lsp-plugins calf caps carla dpf-plugins tap-plugins zam-plugins eq10q surge ebumeter x42-plugins
 
 # Add Other Software
-sudo pacman -S gimp inkscape libreoffice-fresh keepassxc aspell-es ulauncher code gufw libmythes mythes-es papirus-icon-theme papirus-maia-icon-theme neofetch code
+sudo pacman -S gimp inkscape libreoffice-fresh keepassxc aspell-es ulauncher code gufw libmythes mythes-es papirus-icon-theme papirus-maia-icon-theme neofetch
 
 #AUR
 yay -S dropbox
