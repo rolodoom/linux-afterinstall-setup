@@ -12,6 +12,9 @@
 #
 
 
+# BACKUPS - Install and don't forget to backup
+sudo pacman -S timeshift
+
 # TLP - uncomment to enable
 #sudo systemctl enable tlp --now
 # SSH - uncomment to enable
@@ -19,6 +22,9 @@
 
 # Full distro Upgrade
 sudo pacman -Syu
+
+# Add System software
+sudo pacman -S bash-completion
 
 # Configure Audio Workstation
 sudo pacman -S jack2 a2jmidid
@@ -37,14 +43,29 @@ sudo usermod -aG audio $USER
 #@audio           -       memlock         unlimited
 
 # Add Audio / Video Workstation Software
-sudo pacman -S audacity soundconverter kdenlive musescore vlc dragonfly-reverb lsp-plugins calf caps carla dpf-plugins tap-plugins zam-plugins eq10q surge ebumeter x42-plugins
+sudo pacman -S ardour audacity soundconverter kdenlive musescore vlc dragonfly-reverb lsp-plugins calf caps carla dpf-plugins tap-plugins zam-plugins eq10q  surge ebumeter x42-plugins
 
 # Add Other Software
-sudo pacman -S gimp inkscape libreoffice-fresh keepassxc aspell-es code gufw libmythes mythes-es papirus-icon-theme papirus-maia-icon-theme dolphin-plugins
+sudo pacman -S gimp inkscape libreoffice-fresh keepassxc aspell-es ulauncher code gufw libmythes mythes-es papirus-icon-theme papirus-maia-icon-theme neofetch code
 
-#AUR
-sudo pacman -S yay
-sudo pacman -S --needed base-devel
+# AUR
+# install dependencies for compiling AUR packages
+sudo pacman -S yay base-devel
+# install dropbox
 yay -S dropbox
-yay -S dropbox-plasma-dark-icons-git
+# install marketplace for codeOSS
 yay -S code-marketplace
+
+
+# VIRTUALBOX
+#Finde the kernel version
+str=$(uname -r)
+readarray -d . -t splitNoIFS<<< "$str"
+KERNEL="linux${splitNoIFS[0]}${splitNoIFS[1]}"
+# install Virtualbox and modules
+sudo pacman -Syu virtualbox ${KERNEL}-virtualbox-host-modules
+# reload
+sudo modprobe vboxdrv
+sudo vboxreload
+# Install  Oracle Extenssion Pack
+pamac build virtualbox-ext-oracle
