@@ -43,6 +43,8 @@ sudo pacman -S audacity soundconverter kdenlive musescore vlc dragonfly-reverb l
 sudo pacman -S gimp inkscape libreoffice-fresh keepassxc aspell-es code gufw libmythes mythes-es papirus-icon-theme papirus-maia-icon-theme dolphin-plugins
 
 #AUR
+sudo pacman -S yay
+sudo pacman -S --needed base-devel
 yay -S dropbox
 yay -S dropbox-plasma-dark-icons-git
 yay -S code-marketplace
