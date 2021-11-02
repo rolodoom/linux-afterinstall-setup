@@ -70,4 +70,4 @@ sudo pacman -Syu virtualbox ${KERNEL}-virtualbox-host-modules
 sudo modprobe vboxdrv
 sudo vboxreload
 # Install  Oracle Extenssion Pack
-pamac build virtualbox-ext-oracle
+yay -S virtualbox-ext-oracle
