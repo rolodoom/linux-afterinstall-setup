@@ -71,3 +71,7 @@ sudo modprobe vboxdrv
 sudo vboxreload
 # Install  Oracle Extenssion Pack
 yay -S virtualbox-ext-oracle
+# or download from oracle website
+# https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html#extpack
+# then execute
+# $ sudo VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack.vbox-extpack
