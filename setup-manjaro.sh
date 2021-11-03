@@ -58,7 +58,6 @@ yay -S code-marketplace
 # install google chrome
 yay -S google-chrome
 
-
 # VIRTUALBOX
 #Finde the kernel version
 str=$(uname -r)
@@ -75,3 +74,14 @@ yay -S virtualbox-ext-oracle
 # https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html#extpack
 # then execute
 # $ sudo VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack.vbox-extpack
+
+#PIPEWIRE
+# remove pulseaudio
+sudo pacman -Rdd pulseaudio 
+# install pipewire
+sudo pacman -S pipewire pipewire-{alsa,jack,media-session,pulse} 
+# install pipewire jack dropin
+yay -S pipewire-jack-dropin
+# reboot
+echo "--- REBOOT NOW ----"
+
