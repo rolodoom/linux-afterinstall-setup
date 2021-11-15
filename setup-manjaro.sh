@@ -46,7 +46,7 @@ sudo usermod -aG audio $USER
 sudo pacman -S ardour audacity soundconverter kdenlive musescore vlc dragonfly-reverb lsp-plugins calf caps carla dpf-plugins tap-plugins zam-plugins eq10q  surge ebumeter x42-plugins
 
 # Add Other Software
-sudo pacman -S gimp inkscape libreoffice-fresh keepassxc aspell-es ulauncher code gufw libmythes mythes-es papirus-icon-theme papirus-maia-icon-theme neofetch code gpick touchegg handbrake npm
+sudo pacman -S gimp inkscape libreoffice-fresh keepassxc aspell-es ulauncher code gufw libmythes mythes-es papirus-icon-theme papirus-maia-icon-theme neofetch gpick touchegg handbrake npm
 
 # AUR
 # install dependencies for compiling AUR packages
