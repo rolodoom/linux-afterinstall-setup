@@ -8,7 +8,7 @@
 # | |       |  ___  |
 # | |       | |   | |    After install script
 # | |_____  | |___| |    for my Home Studio Box
-# |_______| |_______|    Tested on Manjaro 21.1.4 Pahvo
+# |_______| |_______|    Tested on Manjaro 21.2.1 Qonos
 #
 
 
@@ -46,17 +46,13 @@ sudo usermod -aG audio $USER
 sudo pacman -S ardour audacity soundconverter kdenlive musescore vlc dragonfly-reverb lsp-plugins calf caps carla dpf-plugins tap-plugins zam-plugins eq10q surge ebumeter x42-plugins
 
 # Add Other Software
-sudo pacman -S gimp inkscape libreoffice-fresh keepassxc aspell-es hunspell-es_any ulauncher code gufw libmythes mythes-es papirus-icon-theme papirus-maia-icon-theme neofetch gpick touchegg handbrake npm
+sudo pacman -S gimp inkscape libreoffice-fresh keepassxc aspell-es hunspell-es_any code gufw libmythes mythes-es papirus-icon-theme papirus-maia-icon-theme neofetch gpick touchegg handbrake npm
 
 # AUR
 # install dependencies for compiling AUR packages
 sudo pacman -S yay base-devel
-# install dropbox
-yay -S dropbox
-# install marketplace for codeOSS
-yay -S code-marketplace
-# install google chrome
-yay -S google-chrome
+# install aur software
+yay -S dropbox code-marketplace google-chrome ulauncher
 
 # VIRTUALBOX
 #Finde the kernel version
@@ -77,11 +73,13 @@ yay -S virtualbox-ext-oracle
 
 #PIPEWIRE
 # remove pulseaudio
-sudo pacman -Rdd pulseaudio 
+# sudo pacman -Rdd pulseaudio 
 # install pipewire
-sudo pacman -S pipewire pipewire-{alsa,jack,media-session,pulse} 
+# sudo pacman -S pipewire pipewire-{alsa,jack,media-session,pulse} 
 # install pipewire jack dropin
-yay -S pipewire-jack-dropin
+# yay -S pipewire-jack-dropin
+
+
 # reboot
 echo "--- REBOOT NOW ----"
 
