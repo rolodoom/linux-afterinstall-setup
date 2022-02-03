@@ -42,6 +42,10 @@ sudo usermod -aG audio $USER
 #@audio           -       rtprio          95
 #@audio           -       memlock         unlimited
 
+#other audio config
+yay -S realtime-privileges
+sudo usermod -aG realtime $USER 
+
 # Add Audio / Video Workstation Software
 sudo pacman -S ardour audacity soundconverter kdenlive musescore vlc dragonfly-reverb lsp-plugins calf caps carla dpf-plugins tap-plugins zam-plugins eq10q surge ebumeter x42-plugins
 
