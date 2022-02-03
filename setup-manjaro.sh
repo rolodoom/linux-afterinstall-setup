@@ -31,8 +31,7 @@ sudo pacman -Syu
 sudo pacman -S bash-completion
 
 # Configure Audio Workstation
-sudo pacman -S jack2 a2jmidid
-sudo pacman -S cadence
+sudo pacman -S jack2 a2jmidid cadence
 # Create audio group if it doesn't exists
 sudo groupadd audio
 # Add user to audio group
