@@ -15,6 +15,10 @@
 # BACKUPS - Install and don't forget to backup
 sudo pacman -S timeshift
 
+# AUR
+# install dependencies for compiling AUR packages
+sudo pacman -S yay base-devel
+
 # TLP - uncomment to enable
 #sudo systemctl enable tlp --now
 # SSH - uncomment to enable
@@ -42,7 +46,7 @@ sudo usermod -aG audio $USER
 #@audio           -       rtprio          95
 #@audio           -       memlock         unlimited
 
-#other audio config
+#Real Time Privileges
 yay -S realtime-privileges
 sudo usermod -aG realtime $USER 
 
@@ -53,8 +57,6 @@ sudo pacman -S ardour audacity soundconverter kdenlive musescore vlc dragonfly-r
 sudo pacman -S gimp inkscape libreoffice-fresh keepassxc aspell-es hunspell-es_any code gufw libmythes mythes-es papirus-icon-theme papirus-maia-icon-theme neofetch gpick touchegg handbrake npm
 
 # AUR
-# install dependencies for compiling AUR packages
-sudo pacman -S yay base-devel
 # install aur software
 yay -S dropbox code-marketplace google-chrome ulauncher
 
