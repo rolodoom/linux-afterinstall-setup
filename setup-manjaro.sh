@@ -8,7 +8,7 @@
 # | |       |  ___  |
 # | |       | |   | |    After install script
 # | |_____  | |___| |    for my Home Studio Box
-# |_______| |_______|    Tested on Manjaro 21.2.1 Qonos
+# |_______| |_______|    Tested on Manjaro 21.2.2 Qonos
 #
 
 
