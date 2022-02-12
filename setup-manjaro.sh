@@ -8,7 +8,7 @@
 # | |       |  ___  |
 # | |       | |   | |    After install script
 # | |_____  | |___| |    for my Home Studio Box
-# |_______| |_______|    Tested on Manjaro 21.2.2 Qonos
+# |_______| |_______|    Tested on Manjaro 21.2.3 Qonos
 #
 
 
@@ -53,11 +53,11 @@ sudo usermod -aG realtime $USER
 sudo pacman -S ardour audacity soundconverter kdenlive musescore vlc dragonfly-reverb lsp-plugins calf caps carla dpf-plugins tap-plugins zam-plugins eq10q surge ebumeter x42-plugins
 
 # Add Other Software
-sudo pacman -S gimp inkscape libreoffice-fresh keepassxc aspell-es hunspell-es_any code gufw libmythes mythes-es papirus-icon-theme papirus-maia-icon-theme neofetch gpick touchegg handbrake npm
+sudo pacman -S gimp inkscape libreoffice-fresh keepassxc aspell-es hunspell-es_any gufw libmythes mythes-es papirus-icon-theme papirus-maia-icon-theme neofetch gpick touchegg handbrake npm
 
 # AUR
 # install aur software
-yay -S dropbox code-marketplace google-chrome ulauncher
+yay -S dropbox visual-studio-code-bin google-chrome 
 
 # VIRTUALBOX
 #Finde the kernel version
