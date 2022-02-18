@@ -57,7 +57,7 @@ sudo pacman -S gimp inkscape libreoffice-fresh keepassxc aspell-es hunspell-es_a
 
 # AUR
 # install aur software
-yay -S dropbox visual-studio-code-bin google-chrome 
+yay -S dropbox visual-studio-code-bin google-chrome gimp-plugin-registry
 
 # VIRTUALBOX
 #Finde the kernel version
@@ -77,12 +77,12 @@ yay -S virtualbox-ext-oracle
 # $ sudo VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack.vbox-extpack
 
 #PIPEWIRE
-# remove pulseaudio
-# sudo pacman -Rdd pulseaudio 
+# remove pulseaudio and jack2
+sudo pacman -Rdd pulseaudio jack2
 # install pipewire
-# sudo pacman -S pipewire pipewire-{alsa,jack,media-session,pulse} 
-# install pipewire jack dropin
-# yay -S pipewire-jack-dropin
+sudo pacman -S manjaro-pipewire gst-plugin-pipewire plasma-pa 
+# install pipewire jack
+sudo pacman -S pipewire-jack
 
 
 # reboot
