@@ -8,7 +8,7 @@
 # | |       |  ___  |
 # | |       | |   | |    After install script
 # | |_____  | |___| |    for my Home Studio Box
-# |_______| |_______|    Tested on UbuntuStudio 21.04
+# |_______| |_______|    Tested on UbuntuStudio 24.04
 #
 
 # INITIAL UPGRADE
@@ -17,79 +17,51 @@ sudo apt update && sudo apt upgrade -y
 # Add i386 support
 sudo dpkg --add-architecture i386
 
+# INSTALL SOFTWARE FROM REPOSITORY
+#--from ubuntu repo
+sudo apt install -y docker-compose-v2 docker.io dolphin-plugins filezilla git gufw htop keepassxc nfoview poedit ufw unrar virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso winetricks
+
 # ADDITIONAL REPOSITORIES
 #---wine
-wget -nc https://dl.winehq.org/wine-builds/winehq.key
-sudo apt-key add winehq.key
-sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ hirsute main'
-rm -rf winehq.key
-#---inkscape
-sudo add-apt-repository ppa:inkscape.dev/stable
-#---libreoffice
-sudo add-apt-repository ppa:libreoffice/ppa
-#---kdenlive
-sudo add-apt-repository ppa:kdenlive/kdenlive-stable
-#update && upgrade
-sudo apt update && sudo apt full-upgrade -y
-
-# LAMP SERVER
-# tasksel
-sudo apt install -y tasksel
-sudo tasksel install lamp-server
-# modrewrte
-sudo a2enmod rewrite
-# restart apache
-sudo systemctl restart apache2
-# phpmyadmin
-sudo apt install phpmyadmin
-# Uncomment to secure mysql installation. Mut be done after installing phpmyadmin or there will be problems
-# sudo mysql_secure_installation
-# Generate PDF thumbnails uncomment PDF Policy here:
-sudo apt install php-imagick
-# sudo nano /etc/ImageMagick-6/policy.xml
-sudo systemctl restart apache2
-
-# INSTALL SOFTWARE FROM REPOSITORY
-#---wine-hq
+sudo dpkg --add-architecture i386
+sudo mkdir -pm755 /etc/apt/keyrings
+sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
+sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/noble/winehq-noble.sources
+sudo apt update
 sudo apt install --install-recommends winehq-staging
-#--from ubuntu repo
-sudo apt install -y latte-dock git neofetch htop flatpak dolphin-plugins winetricks winbind neofetch filezilla poedit libreoffice-style-breeze typecatcher posterazor keepassxc gufw handbrake simplescreenrecorder polyphone npm virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack
+sudo apt install winetricks
 
 # INSTALL NON-FREE DPKG SOFTWARE
 #getting debs
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-wget --content-disposition https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2020.03.04_amd64.deb
-# visual studio code
-wget --content-disposition https://go.microsoft.com/fwlink/?LinkID=760868
-wget deb https://github.com/Ulauncher/Ulauncher/releases/download/5.10.0/ulauncher_5.10.0_all.deb
-wget https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher_2.2.0-travis995.0f91801.bionic_amd64.deb
-wget https://github.com/osxmidi/LinVst/releases/download/4.1/LinVst-64bit-32bit_4.1.0.deb
+wget --content-disposition https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2024.04.17_amd64.deb
+wget --content-disposition https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
+wget https://github.com/Ulauncher/Ulauncher/releases/download/5.15.7/ulauncher_5.15.7_all.deb
 #installing...
 sudo apt install ./code*.deb
 sudo apt install ./google-chrome*.deb
 sudo apt install ./dropbox*.deb
 sudo apt install ./ulauncher*.deb
-sudo apt install ./appimagelauncher*.deb
-sudo apt install ./LinVst*.deb
+#cleaning...
+rm -r *.deb
+
+# YABRIDGE
+wget -O yabridge.tar.gz https://github.com/robbert-vdh/yabridge/releases/download/5.1.0/yabridge-5.1.0.tar.gz
+mkdir -p ~/.local/share
+tar -C ~/.local/share -xavf yabridge.tar.gz
+rm yabridge.tar.gz
 
 # SPANISH LANGUAGE
 sudo apt install -y language-pack-gnome-es language-pack-kde-es aspell-es $(check-language-support)
 
 # PERMISSIONS
 # Add me to any groups I might need to be a part of:
-sudo adduser $USER www-data
+sudo adduser $USER docker
 sudo adduser $USER vboxusers
-# -- default ubuntu groups --
-# adm cdrom sudo audio dip www-data plugdev lpadmin lxd sambashare vboxusers
-# Permissions on public_html folder on /home directory, where I usually
-sudo chown -R www-data:www-data /var/www/
-sudo chmod -R g+rwX /var/www/
-sudo chown -R www-data:www-data /home/public_html/
-sudo chmod -R g+rwX /home/public_html/
 
 #FLATPAKS
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub org.gtk.Gtk3theme.Materia-dark
+sudo apt install flatpak plasma-discover-backend-flatpak
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 # FINAL STEPS
 # Install TLP for laptops
@@ -97,14 +69,5 @@ flatpak install flathub org.gtk.Gtk3theme.Materia-dark
 #sudo tlp start
 # Remove unused software
 sudo apt autoremove -y
-# Disable Apache and Mysql services at boot
-sudo systemctl disable apache2
-sudo systemctl disable mysql.service
-# Some cleanning
-# Delete DPK installers
-rm -r *.deb
 # Gotta reboot now:
 echo $'\n'$"*** Reboot now. ***"
-
-
-
